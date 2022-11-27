@@ -1,0 +1,19 @@
+[
+  { "user_id": 1, "post_id": 1, "contents": "Agreed! Coding is so powerful!" },
+  {
+    "user_id": 2,
+    "post_id": 2,
+    "contents": "Same. It's so straightforward to use."
+  },
+  {
+    "user_id": 1,
+    "post_id": 3,
+    "title": "Folders",
+    "contents": "I am wondering the same!"
+  },
+  {
+    "user_id": 3,
+    "post_id": 2,
+    "contents": "I personally prefer using regular old CSS for styling."
+  }
+]
