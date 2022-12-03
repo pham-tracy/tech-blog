@@ -58,6 +58,4 @@ User.init(
   }
 );
 
-// Heroku cannot find User model
-
 module.exports = User;
