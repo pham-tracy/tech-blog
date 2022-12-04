@@ -15,11 +15,11 @@ router.get("/", async (req, res) => {
     });
 
     // Serializes the data so it can be read by the template
-    const post = postData.map((post) => post.get({ plain: true }));
+    const posts = postData.map((posts) => posts.get({ plain: true }));
 
     // Pass serialized data and session flag into homepage helper template
     res.render("homepage", {
-      post,
+      posts,
       logged_in: req.session.logged_in,
     });
   } catch (err) {
