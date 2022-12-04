@@ -72,7 +72,7 @@ router.get("/dashboard", withAuth, async (req, res) => {
 router.get("/login", (req, res) => {
   // If the user is already logged in, redirects to the dashboard
   if (req.session.logged_in) {
-    res.redirect("/dashboard");
+    res.redirect("/post");
     return;
   }
 
