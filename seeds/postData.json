@@ -3,13 +3,25 @@
       "title": "Custom Helpers",
       "contents": "Custom helpers are so useful! It's so cool how you can format it to work with your own needs!"
     },
+    { "user_id": 1,
+      "title": "Favorite colors?",
+      "contents": "What're your favorite color schemes?"
+    },
     { "user_id": 2,
       "title": "Bootstrap",
       "contents": "Bootstrap is my favorite CSS framework!"
     },
+    { "user_id": 2,
+      "title": "Coding games?",
+      "contents": "Any out there?"
+    },
     { "user_id": 3,
       "title": "Folders",
       "contents": "As my project grows, are there any tips on how to structure my files and folders?"
+    },
+    { "user_id": 3,
+      "title": "Comments",
+      "contents": "What's the best format?"
     }
   ]
   

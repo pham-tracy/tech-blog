@@ -1,14 +1,12 @@
-{{#each posts as |post| }}
+{{#each posts as |post|}}
 <div class="container px-4 px-lg-5">
         <div class="row gx-4 gx-lg-5 justify-content-center">
             <div class="col-md-10 col-lg-8 col-xl-7">
          <h2 class="post-title">
            <a href="/post/{{post.id}}">
-        
+       {{post.title}}  
     </h2></a>
-   {{post.title}}
-
-
+  
     <p class="post-meta">Created by {{post.user.name}} on {{post.date_created}}</p>
   </div>
   <div class="col-md-10 col-lg-8 col-xl-7">

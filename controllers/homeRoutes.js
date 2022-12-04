@@ -41,8 +41,8 @@ router.get("/post/:id", async (req, res) => {
 
     const post = postData.get({ plain: true });
 
-    res.render("post", {
-      ...project,
+    res.render("dashboard", {
+      ...post,
       logged_in: req.session.logged_in,
     });
   } catch (err) {
@@ -60,7 +60,7 @@ router.get("/dashboard", withAuth, async (req, res) => {
 
     const user = userData.get({ plain: true });
 
-    res.render("post", {
+    res.render("dashboard", {
       ...user,
       logged_in: true,
     });
