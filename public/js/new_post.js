@@ -43,6 +43,6 @@ document
   .querySelector(".new-post-form")
   .addEventListener("submit", newFormHandler);
 
-// document
-//   .querySelector(".current-post")
-//   .addEventListener("click", delFormHandler);
+document
+  .querySelector(".current-post")
+  .addEventListener("click", delFormHandler);
