@@ -1,3 +1,7 @@
+const post_id = window.location.toString().split("/")[
+  window.location.toString().split("/").length - 1
+];
+
 const commentFormHandler = async (event) => {
   event.preventDefault();
 
@@ -8,7 +12,7 @@ const commentFormHandler = async (event) => {
     // Send a POST request to the API endpoint
     const response = await fetch("/api/comments", {
       method: "POST",
-      body: JSON.stringify({ comment_contents }),
+      body: JSON.stringify({ post_id, comment_contents }),
       headers: { "Content-Type": "application/json" },
     });
 
