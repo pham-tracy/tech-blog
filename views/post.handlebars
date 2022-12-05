@@ -2,23 +2,12 @@
   <h2>{{title}}</h2>
   <p>{{contents}}</p>
   <p>Created by {{user.name}} on {{format_date date_created}}</p>
-   {{!-- <p>{{comment_contents}}</p>
-   <p>{{post.comment_contents}}</p>
-   <p>{{comments}}</p> --}}
-   {{!-- <p>{{comments.comment_contents}}</p> --}}
-
-{{!-- Displays each comment --}}
-{{#each comments}}
-        <section class="comment">
-            <div class="text">
-            {{comment_contents}}
-            </div>
-        </section>
-    {{/each}}
 
  <div class="col-sml-8">
-    <button class="btn btn-sm btn-danger current-post" data-id="{{post.id}}">DELETE</button>
+    <button class="btn btn-sm btn-danger current-post" data-id="{{post.id}}">Delete Post</button>
     </div>
+
+
 </div>
 
 {{#if logged_in}}
@@ -34,6 +23,21 @@
 
 
 {{/if}}
+
+
+<div>
+
+
+        {{!-- Displays each comment --}}
+{{#each comments}}
+        <section class="comment">
+            <div class="text">
+            {{comment_contents}}
+            </div>
+        </section>
+    {{/each}}
+</div>
+
 
 <script src="/js/comment.js"></script>
 <script src="/js/new_post.js"></script> 

@@ -27,7 +27,6 @@ router.get("/", async (req, res) => {
   }
 });
 
-// ONLY POSTING COMMENTS FROM USER WHO POSTS, not comments from those who comment. how do i fix this??
 router.get("/post/:id", async (req, res) => {
   try {
     const postData = await Post.findByPk(req.params.id, {
@@ -36,11 +35,11 @@ router.get("/post/:id", async (req, res) => {
           model: User,
           attributes: ["name"],
         },
-        {
-          model: Comment,
-          attributes: ["comment_contents", "post_id", "id", "user_id"],
-        },
-        // Comment,
+        // {
+        //   model: Comment,
+        //   attributes: ["comment_contents", "post_id", "id", "user_id"],
+        // },
+        Comment,
       ],
     });
 
