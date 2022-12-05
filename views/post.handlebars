@@ -2,13 +2,17 @@
   <h2>{{title}}</h2>
   <p>{{contents}}</p>
   <p>Created by {{user.name}} on {{format_date date_created}}</p>
-   <p>{{comment_body}}</p>
-
+   <p>{{comment_contents}}</p>
+   <p>{{post.comment_contents}}</p>
+   <p>{{comments}}</p>
+ <div class="col-sml-8">
+    <button class="btn btn-sm btn-danger current-post" data-id="{{post.id}}">DELETE</button>
+    </div>
 </div>
 
 {{#if logged_in}}
 
-<form class="comment-form">
+<form id="comment-form">
         <div class="input-field">
             <label>Comment:</label>
             <textarea type="text" id="comment"></textarea>
@@ -19,6 +23,6 @@
 
 
 {{/if}}
-{{!-- TODO: Link comment js --}}
-{{!-- <script src=""></script> --}}
 
+<script src="/js/comment.js"></script>
+<script src="/js/new_post.js"></script> 
