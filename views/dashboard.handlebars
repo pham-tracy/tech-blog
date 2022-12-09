@@ -1,3 +1,11 @@
+ <div class="add-post">
+        <button type="submit" class="btn btn-primary create-btn">+ Create Post</button>
+      </div>
+
+
+
+
+
 <div class="col-md-6">
     <h3>Create New Post:</h3>
     <form class="form new-post-form">
@@ -33,10 +41,10 @@
     </div>
 
     <div class="col-sml-8">
+<br>
+    <a href="/post/{{post.id}}/update"><button class="btn btn-sm btn-primary updateBtn" data-id="{{post.id}}">EDIT</button> </a>
 
-    <button class="btn btn-sm btn-danger updateBtn" data-id="{{post.id}}">EDIT</button>
-
-    <button class="btn btn-sm btn-danger deleteBtn" data-id="{{post.id}}">DELETE</button>
+    {{!-- <button class="btn btn-sm btn-danger deleteBtn" data-id="{{post.id}}">DELETE</button> --}}
     
     </div>
   </div>
