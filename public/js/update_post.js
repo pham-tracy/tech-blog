@@ -6,8 +6,11 @@ const updateFormHandler = async (event) => {
   const contents = document.querySelector("#post-body").value.trim();
 
   // if (event.target.hasAttribute("data-id")) {
-  const postID = event.target.getAttribute("data-id");
+  //   const postID = event.target.getAttribute("data-id");
 
+  const postID = document.querySelector(".updateBtn").getAttribute("data-id");
+
+  console.log(postID);
   const response = await fetch(`/api/post/${postID}`, {
     method: "PUT",
     body: JSON.stringify({ post_id: postID, title, contents }),
@@ -44,7 +47,7 @@ const delFormHandler = async (event) => {
 };
 
 document
-  .querySelector(".update-post-form")
-  .addEventListener("submit", updateFormHandler);
+  .querySelector(".updateBtn")
+  .addEventListener("click", updateFormHandler);
 
 document.querySelector(".deleteBtn").addEventListener("click", delFormHandler);

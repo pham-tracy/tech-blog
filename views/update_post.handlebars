@@ -1,7 +1,7 @@
 
 {{!-- 
 Update post form --}}
-      <div class="col-md-6 hide new-post-form">
+      <div class="col-md-6 hide update-post-form">
     <h3>Update Post:</h3>
     <form class="form update-post-form">
       <div class="form-group">
@@ -13,9 +13,12 @@ Update post form --}}
         <textarea class="form-input" id="post-body" name="post-body"></textarea>
       </div> 
       <div class="form-group">
-        <button type="submit" class="btn btn-primary updateBtn">Update Post</button>
+        <button type="submit" class="btn btn-primary updateBtn" data-id="{{id}}">Update Post</button>
+
+    <button class="btn btn-sm btn-danger deleteBtn" data-id="{{id}}">DELETE</button>
+   
       </div>
     </form>
 </div>
 
-<script src="/js/new_post.js"></script> 
+<script src="/js/update_post.js"></script> 
