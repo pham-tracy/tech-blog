@@ -2,10 +2,10 @@
   <h2>{{title}}</h2>
   <p>{{contents}}</p>
   <p>Created by {{user.name}} on {{format_date date_created}}</p>
-
+{{!-- 
  <div class="col-sml-8">
-    <button class="btn btn-sm btn-danger current-post" data-id="{{post.id}}">Delete Post</button>
-    </div>
+    <button class="btn btn-sm btn-danger deleteBtn" data-id="{{post.id}}">Delete Post</button>
+    </div> --}}
 
 
 </div>
@@ -32,7 +32,14 @@
 {{#each comments}}
         <section class="comment">
             <div class="text">
+                {{!-- comment --}}
             {{comment_contents}}
+            {{!-- Commenter information --}}
+            <p class="commenter-info">{{user.name}} on {{format_date date_created}}</p>
+            {{!-- TODO: add functionality to edit and delete comments --}}
+            <a href="">Edit</a>
+            <a href="">Delete</a>
+            <hr>
             </div>
         </section>
     {{/each}}

@@ -1,5 +1,60 @@
-/* * {
+body {
     font-size: 20px;
-    color: blue;
-    background-color: yellow;
+    color: #373794;
+    background-color: #afdea5;
+}
+/* 
+.hide {
+    display:none;
 } */
+
+h1 {
+    margin: 10px;
+}
+#nav-bar {
+    display:flex;
+    flex-direction: row;
+    width:100%;
+ justify-content: space-between;
+ align-items: center;
+ background-color: whitesmoke;
+ border-radius: 5px;
+ /* position:fixed;
+ z-index: 1; */
+}
+
+header {
+    padding: 0px;
+}
+#nav-links{
+    display:flex;
+    flex-direction: row;
+    width:100%;
+    align-items: center;
+    margin-bottom: 0;
+    /* padding-left: 0px; */
+}
+
+#nav-links li{
+   margin:5px 40px;
+   padding:0;
+}
+a {
+    text-decoration: none;
+}
+
+.container {
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: 20px;
+
+}
+
+
+ul {
+    list-style-type: none;
+}
+
+.commenter-info {
+    color: rgb(96, 96, 96);
+}

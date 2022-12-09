@@ -17,10 +17,12 @@
 <body>
   <div class="flex-column justify-space-around">
     <header class="display-flex justify-space-between align-center p-2">
-      <h1> Today's Tech Blog</h1>
-      <nav>
-       <ul>
-        <li><a href="/">Home</a></li>
+      
+      <nav id="nav-bar">
+       <h1> Today's Tech Blog</h1>
+       <div ><ul id="nav-links">
+<li><a href="/">
+Home</a></li>
         <li><a href="/dashboard">Dashboard</a></li>
 
         {{#if logged_in}}
@@ -31,10 +33,14 @@
            
         {{/if}}
         </ul>
+        </div>
       </nav>
+
+
+      
     </header>
     
-    <main class="container container-fluid mt-5">
+    <main class=" container-fluid mt-5">
       <!-- Render the sub layout -->
       {{{ body }}}
     </main>

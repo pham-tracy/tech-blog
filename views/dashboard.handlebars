@@ -20,11 +20,11 @@
 <!-- Loop over each object in the posts -->
 
 {{#if posts.length}}
-<div class="col-md-6 current-post">
+<div class="col-md-6 ">
     <h3>Current Posts:</h3>
 
 {{#each posts as |post|}}
-  <div class="row justify-content-center">
+  <div class="row justify-content-center current-post">
     <div class="col-sml-8">
       <h2><a href="/post/{{post.id}}"> {{post.title}}</a></h2>
       <br>
@@ -33,7 +33,11 @@
     </div>
 
     <div class="col-sml-8">
-    <button class="btn btn-sm btn-danger" data-id="{{post.id}}">DELETE</button>
+
+    <button class="btn btn-sm btn-danger updateBtn" data-id="{{post.id}}">EDIT</button>
+
+    <button class="btn btn-sm btn-danger deleteBtn" data-id="{{post.id}}">DELETE</button>
+    
     </div>
   </div>
 {{/each}}{{/if}}
