@@ -1,0 +1,19 @@
+
+{{!-- 
+Update comment form --}}
+      <div class="col-md-6 hide update-comment-form">
+    <h3>Update Comment:</h3>
+    <form class="form update-comment-form">
+        <label for="comment-body">Comment:</label>
+        <textarea class="form-input" id="comment-body" name="comment-body"></textarea>
+      </div> 
+      <div class="form-group">
+        <button type="submit" class="btn btn-primary updateCommentBtn" data-id="{{id}}">Update Comment</button>
+
+    <button class="btn btn-primary btn-danger deleteCommentBtn" data-id="{{id}}">Delete Comment</button>
+   
+      </div>
+    </form>
+</div>
+
+<script src="/js/update_comment.js"></script> 

@@ -27,6 +27,7 @@ router.get("/", async (req, res) => {
   }
 });
 
+// GET Post
 router.get("/post/:id", async (req, res) => {
   try {
     const postData = await Post.findByPk(req.params.id, {
@@ -65,7 +66,7 @@ router.get("/post/:id", async (req, res) => {
   }
 });
 
-// TODO/update
+// Update Post
 router.get("/post/:id/update", async (req, res) => {
   try {
     const postData = await Post.findByPk(req.params.id, {
@@ -91,6 +92,78 @@ router.get("/post/:id/update", async (req, res) => {
       logged_in: req.session.logged_in,
     });
   } catch (err) {
+    res.status(500).json(err);
+  }
+});
+
+// Get Comment
+router.get("/comment/:id", async (req, res) => {
+  try {
+    const commentData = await Comment.findOne({
+      where: { id: req.params.id },
+      include: [
+        {
+          model: User,
+          attributes: ["name"],
+        },
+        {
+          model: Comment,
+          attributes: [
+            "comment_contents",
+            "post_id",
+            "id",
+            "user_id",
+            "date_created",
+          ],
+          include: {
+            model: User,
+            attributes: ["name", "id"],
+          },
+        },
+        // Comment,
+      ],
+    });
+
+    const comment = commentData.get({ plain: true });
+    console.log(comment);
+
+    res.render("update_comment", {
+      ...comment,
+      logged_in: req.session.logged_in,
+    });
+  } catch (err) {
+    res.status(500).json(err);
+    console;
+  }
+});
+
+// Update Comment
+router.get("/comment/:id/update", async (req, res) => {
+  try {
+    const commentData = await Comment.findByPk(req.params.id, {
+      include: [
+        {
+          model: User,
+          attributes: ["name"],
+        },
+        // {
+        //   model: Comment,
+        //   attributes: ["comment_contents", "post_id", "id", "user_id"],
+        //   include: { model: User, attributes: ["name", "id"] },
+        // },
+        // Comment,
+      ],
+    });
+
+    const comment = commentData.get({ plain: true });
+    console.log(comment);
+
+    res.render("update_comment", {
+      ...comment,
+      logged_in: req.session.logged_in,
+    });
+  } catch (err) {
+    console.log(err);
     res.status(500).json(err);
   }
 });

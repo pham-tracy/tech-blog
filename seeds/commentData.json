@@ -1,19 +1,18 @@
 [
-  { "user_id": 1, "post_id": 1, "comment_contents": "Agreed! Coding is so powerful!" },
+  { "user_id": 1, "post_id": 2, "comment_contents": "Pink is my favorite color!" },
   {
     "user_id": 2,
-    "post_id": 2,
-    "comment_contents": "Same. It's so straightforward to use."
+    "post_id": 5,
+    "comment_contents": "Follow the MVC method!"
   },
   {
     "user_id": 1,
-    "post_id": 3,
-    "title": "Folders",
+    "post_id": 5,
     "comment_contents": "I am wondering the same!"
   },
   {
     "user_id": 3,
-    "post_id": 2,
-    "comment_contents": "I personally prefer using regular old CSS for styling."
+    "post_id": 1,
+    "comment_contents": "True! It's such a great tool. I love using it with dates."
   }
 ]

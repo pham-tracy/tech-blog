@@ -1,3 +1,9 @@
+<div class="text-center">
+  <h2>{{title}}</h2>
+  <p>{{contents}}</p>
+  <p>Created by {{user.name}} on {{format_date date_created}}</p>
+
+
 
 {{!-- 
 Update post form --}}
@@ -15,7 +21,7 @@ Update post form --}}
       <div class="form-group">
         <button type="submit" class="btn btn-primary updateBtn" data-id="{{id}}">Update Post</button>
 
-    <button class="btn btn-sm btn-danger deleteBtn" data-id="{{id}}">DELETE</button>
+    <button class="btn btn-primary btn-danger deleteBtn" data-id="{{id}}">Delete Post</button>
    
       </div>
     </form>
