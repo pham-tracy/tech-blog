@@ -1,4 +1,5 @@
 const router = require("express").Router();
+const { BelongsTo } = require("sequelize");
 const { User, Post, Comment } = require("../models");
 const withAuth = require("../utils/auth");
 
@@ -145,6 +146,9 @@ router.get("/comment/:id/update", async (req, res) => {
         {
           model: User,
           attributes: ["name"],
+        },
+        {
+          model: Post,
         },
         // {
         //   model: Comment,

@@ -1,4 +1,4 @@
-
+{{#if logged_in}}
 {{!-- 
 Update comment form --}}
       <div class="col-md-6 hide update-comment-form">
@@ -9,11 +9,21 @@ Update comment form --}}
       </div> 
       <div class="form-group">
         <button type="submit" class="btn btn-primary updateCommentBtn" data-id="{{id}}">Update Comment</button>
+        
 
     <button class="btn btn-primary btn-danger deleteCommentBtn" data-id="{{id}}">Delete Comment</button>
    
+   <p class="postID" data-id="{{post.id}}">Post ID: {{post.id}}</p>
       </div>
     </form>
+
+
+    {{else}}
+    <a href="/login"><h1>Please login</h1></a>
+ 
+    {{/if}}
+
+
 </div>
 
 <script src="/js/update_comment.js"></script> 
