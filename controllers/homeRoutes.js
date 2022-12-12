@@ -101,6 +101,7 @@ router.get("/post/:id/update", async (req, res) => {
 router.get("/comment/:id", async (req, res) => {
   try {
     const commentData = await Comment.findOne({
+      subQuery: false,
       where: { id: req.params.id },
       include: [
         {
