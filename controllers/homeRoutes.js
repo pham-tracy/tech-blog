@@ -51,7 +51,6 @@ router.get("/post/:id", async (req, res) => {
             attributes: ["name", "id"],
           },
         },
-        // Comment,
       ],
     });
 
