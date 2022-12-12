@@ -6,13 +6,13 @@ const commentFormHandler = async (event) => {
   event.preventDefault();
 
   // Comment form
-  const comment_contents = document.querySelector("#comment").value.trim();
+  const description = document.querySelector("#comment").value.trim();
 
-  if (comment_contents) {
+  if (description) {
     // Send a POST request to the API endpoint
     const response = await fetch("/api/comments", {
       method: "POST",
-      body: JSON.stringify({ post_id, comment_contents }),
+      body: JSON.stringify({ post_id, description }),
       headers: { "Content-Type": "application/json" },
     });
 
