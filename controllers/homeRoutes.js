@@ -80,7 +80,6 @@ router.get("/post/:id/update", async (req, res) => {
           attributes: ["description", "post_id", "id", "user_id"],
           include: { model: User, attributes: ["name", "id"] },
         },
-        // Comment,
       ],
     });
 
@@ -120,7 +119,6 @@ router.get("/comment/:id", async (req, res) => {
             attributes: ["name", "id"],
           },
         },
-        // Comment,
       ],
     });
 
