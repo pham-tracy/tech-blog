@@ -1,5 +1,5 @@
 [
-  { "user_id": 1, "post_id": 2, "comment_contents": "Pink is my favorite color!" },
+  { "user_id": 1, "post_id": 2, "description": "Pink is my favorite color!" },
   {
     "user_id": 2,
     "post_id": 5,
