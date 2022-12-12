@@ -18,7 +18,7 @@ const updateFormHandler = async (event) => {
 
   if (response.ok) {
     console.log(response);
-    document.location.replace("/dashboard");
+    document.location.replace(`/post/${postID}`);
   } else {
     alert("Failed to update post");
   }
