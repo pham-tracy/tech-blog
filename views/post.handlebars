@@ -2,14 +2,10 @@
   <h2>{{title}}</h2>
   <p>{{contents}}</p>
   <p>Created by {{user.name}} on {{format_date date_created}}</p>
-{{!-- 
- <div class="col-sml-8">
-    <button class="btn btn-sm btn-danger deleteBtn" data-id="{{post.id}}">Delete Post</button>
-    </div> --}}
-
 
 </div>
 
+{{!-- If logged in, display form to create a comment --}}
 {{#if logged_in}}
 
 <form id="comment-form">
@@ -23,7 +19,6 @@
 
 {{/if}}
 
-
 <div>
 
 
@@ -35,9 +30,8 @@
             {{description}}
             {{!-- Commenter information --}}
             <p class="commenter-info">{{user.name}} on {{format_date date_created}}</p>
-            {{!-- TODO: add functionality to edit and delete comments --}}
 
-
+{{!-- Link to update or delete comment --}}
               <div class="form-group">
         <a href="/comment/{{id}}/update"<button type="submit" class="btn btn-primary updateCommentBtn" data-id="{{id}}">Update Comment</button></a>
       </div>
