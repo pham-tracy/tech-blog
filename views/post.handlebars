@@ -2,43 +2,42 @@
   <h2>{{title}}</h2>
   <p>{{contents}}</p>
   <p>Created by {{user.name}} on {{format_date date_created}}</p>
-
 </div>
 
 {{!-- If logged in, display form to create a comment --}}
 {{#if logged_in}}
 
 <form id="comment-form">
-        <div class="input-field">
-            <label>Comment:</label>
-            <textarea type="text" id="comment"></textarea>
-        </div>
+    <div class="input-field">
+        <label>Comment:</label>
+        <textarea type="text" id="comment"></textarea>
+    </div>
         <input type="hidden" name="post-id" value="{{post.id}}">
         <button type="submit" class="btn btn-primary create-btn">Post comment</button>
-    </form>
+</form>
 
 {{/if}}
 
-<div>
-
-
-        {{!-- Displays each comment --}}
+<div> 
+{{!-- Displays each comment --}}
 {{#each comments}}
-        <section class="comment">
-            <div class="text">
-                {{!-- comment --}}
+    <section class="comment">
+        <div class="text">
+        {{!-- comment --}}
             {{description}}
             {{!-- Commenter information --}}
             <p class="commenter-info">{{user.name}} on {{format_date date_created}}</p>
 
-{{!-- Link to update or delete comment --}}
-              <div class="form-group">
-        <a href="/comment/{{id}}/update"<button type="submit" class="btn btn-primary updateCommentBtn" data-id="{{id}}">Update Comment</button></a>
-      </div>
-            <hr>
+        {{!-- Link to update or delete comment --}}
+            <div class="form-group">
+                <a href="/comment/{{id}}/update">
+                    <button type="submit" class="btn btn-primary updateCommentBtn" data-id="{{id}}">Update Comment</button>
+                </a>
             </div>
-        </section>
-    {{/each}}
+        <hr>
+        </div>
+    </section>
+{{/each}}
 </div>
 
 
