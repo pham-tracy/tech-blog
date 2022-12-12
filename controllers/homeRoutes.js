@@ -70,7 +70,6 @@ router.get("/post/:id/update", async (req, res) => {
         },
         {
           model: Comment,
-          attributes: ["description", "post_id", "id", "user_id"],
           include: { model: User, attributes: ["name", "id"] },
         },
       ],
