@@ -39,13 +39,6 @@ router.get("/post/:id", async (req, res) => {
         },
         {
           model: Comment,
-          // attributes: [
-          //   "description",
-          //   "post_id",
-          //   "id",
-          //   "user_id",
-          //   "date_created",
-          // ],
           include: {
             model: User,
             attributes: ["name", "id"],
@@ -147,12 +140,6 @@ router.get("/comment/:id/update", async (req, res) => {
         {
           model: Post,
         },
-        // {
-        //   model: Comment,
-        //   attributes: ["comment_contents", "post_id", "id", "user_id"],
-        //   include: { model: User, attributes: ["name", "id"] },
-        // },
-        // Comment,
       ],
     });
 
