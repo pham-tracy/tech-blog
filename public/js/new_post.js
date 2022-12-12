@@ -26,20 +26,6 @@ document
   .querySelector(".new-post-form")
   .addEventListener("submit", newFormHandler);
 
-// document
-//   .querySelector(".updateBtn")
-//   .addEventListener("click", updateFormHandler);
-
-// document.querySelector(".deleteBtn").addEventListener("click", delFormHandler);
-
-// document
-//   .querySelector("#updateBtn")
-//   .addEventListener("click", showUpdateForm());
-
-// function showUpdateForm() {
-//   document.querySelector("updateForm").style.display = "block";
-// }
-
 document.querySelector(".create-post-btn").addEventListener("click", showForm);
 
 function showForm() {

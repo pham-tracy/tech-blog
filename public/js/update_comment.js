@@ -4,8 +4,6 @@ const updateFormHandler = async (event) => {
 
   const description = document.querySelector("#comment-body").value.trim();
 
-  // if (event.target.hasAttribute("data-id")) {
-  //   const postID = event.target.getAttribute("data-id");
   const postID = document.querySelector(".postID").getAttribute("data-id");
 
   const commentID = document
@@ -30,7 +28,6 @@ const updateFormHandler = async (event) => {
     alert("Failed to update comment");
   }
 };
-// };
 
 // Delete post
 const delFormHandler = async (event) => {

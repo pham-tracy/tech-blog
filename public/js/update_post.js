@@ -5,9 +5,6 @@ const updateFormHandler = async (event) => {
   const title = document.querySelector("#post-title").value.trim();
   const contents = document.querySelector("#post-body").value.trim();
 
-  // if (event.target.hasAttribute("data-id")) {
-  //   const postID = event.target.getAttribute("data-id");
-
   const postID = document.querySelector(".updateBtn").getAttribute("data-id");
 
   console.log(postID);
