@@ -22,7 +22,7 @@ N/A
 
 ## Usage
 
-Visit the deployed application here: https://vast-journey-19745.herokuapp.com/login
+Visit the deployed application here: https://vast-journey-19745.herokuapp.com/
 
 ### Screenshots
 
