@@ -2,7 +2,7 @@
 const updateFormHandler = async (event) => {
   event.preventDefault();
 
-  const comment_contents = document.querySelector("#comment-body").value.trim();
+  const description = document.querySelector("#comment-body").value.trim();
 
   // if (event.target.hasAttribute("data-id")) {
   //   const postID = event.target.getAttribute("data-id");
@@ -16,7 +16,7 @@ const updateFormHandler = async (event) => {
   console.log(postID);
   const response = await fetch(`/api/comments/${commentID}`, {
     method: "PUT",
-    body: JSON.stringify({ comment_id: commentID, comment_contents }),
+    body: JSON.stringify({ comment_id: commentID, description }),
     headers: {
       "Content-Type": "application/json",
     },

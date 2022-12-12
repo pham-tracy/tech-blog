@@ -3,16 +3,16 @@
   {
     "user_id": 2,
     "post_id": 5,
-    "comment_contents": "Follow the MVC method!"
+    "description": "Follow the MVC method!"
   },
   {
     "user_id": 1,
     "post_id": 5,
-    "comment_contents": "I am wondering the same!"
+    "description": "I am wondering the same!"
   },
   {
     "user_id": 3,
     "post_id": 1,
-    "comment_contents": "True! It's such a great tool. I love using it with dates."
+    "description": "True! It's such a great tool. I love using it with dates."
   }
 ]
