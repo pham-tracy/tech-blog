@@ -1,10 +1,10 @@
-# tech-blog [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+# Today's Tech Blog [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Description
 
 This web application serves as a blog for web developers to share their latest thoughts about technology in today's world.
 
-In this application, users are able to create blog posts, as well as comment on others. Users are also able to delete their own posts and comments, if desired. With these functionality, it allows web developers across the world to connect and form a community around the state of technology.
+In this application, users are able to create blog posts, as well as comment on others. Users are also able to delete their own posts and comments, if desired. With this functionality, it allows web developers across the world to connect and form a community around the state of technology in today's world.
 
 This application was created with Node.js, Express JS, JavaScript, HTML, Handlebars, Bootstrap and CSS.
 
@@ -22,17 +22,21 @@ N/A
 
 ## Usage
 
-Visit the deployed application here: https://vast-journey-19745.herokuapp.com/
+Visit the deployed application here: https://stark-harbor-74531.herokuapp.com/
 
 ### Screenshots
 
-![Tech blog homepage] ()
+![Tech blog homepage](./public/images/Today's%20Tech%20Blog_Homepage.png)
 
-![Tech blog login page] ()
+![Tech blog login page](./public/images/Today's%20Tech%20Blog_Login.png)
 
-![Tech blog dashboard page] ()
+![Tech blog dashboard page](./public/images/Today's%20Tech%20Blog_Dashboard.png)
 
-![Tech blog post page] ()
+![Tech blog create post](./public/images/Today's%20Tech%20Blog_Create%20Post.png)
+
+![Tech blog post page](./public/images/Today's%20Tech%20Blog_View%20Post.png)
+
+![Tech blog update comment](./public/images/Today's%20Tech%20Blog_Update%20Comment.png)
 
 ## License
 
