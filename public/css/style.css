@@ -1,7 +1,11 @@
+* {
+    font-family: 'Poppins', serif;
+    }
+
 body {
     font-size: 20px;
     color: #373794;
-    background-color: #afdea5;
+    /* background-color: #afdea5; */
 }
 
 .new-post-div {
@@ -17,8 +21,9 @@ h1 {
     width:100%;
  justify-content: space-between;
  align-items: center;
- background-color: whitesmoke;
+ /* background-color: whitesmoke; */
  border-radius: 5px;
+ border-bottom: 5px rgb(19, 84, 214) solid;
  /* position:fixed;
  z-index: 1; */
 }
@@ -44,8 +49,8 @@ a {
 }
 
 .container {
-    border: 2px solid black;
-    border-radius: 10px;
+    /* border: 2px solid black; */
+    /* border-radius: 10px; */
     margin: 20px;
 
 }
@@ -55,7 +60,7 @@ ul {
     list-style-type: none;
 }
 
-.commenter-info {
+.commenter-info, .post-meta {
     color: rgb(96, 96, 96);
 }
 
