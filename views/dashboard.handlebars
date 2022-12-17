@@ -23,23 +23,24 @@
 {{#if posts.length}}
 
 <div class="col-md-6 current-post-div">
-    <h3>Current Posts:</h3>
+    <h2>Current Posts:</h2>
+   <br>
 
 {{#each posts as |post|}}
     <div class="row justify-content-center current-post">
-      <div class="col-sml-8">
-        <h2>
+      <div class="col-sml-8 pr-3">
+        <h3>
           <a href="/post/{{post.id}}">{{post.title}}</a>
-        </h2>
+        </h3>
         <br>
       </div>
 
-      <div class="col-sml-8">
-        <br>
+      {{!-- <div class="col-sml-8">
+        <br> --}}
         <a href="/post/{{post.id}}/update">
           <button class="btn btn-sm btn-primary updateBtn" data-id="{{post.id}}">Edit</button>
         </a>
-      </div>
+      {{!-- </div> --}}
     </div>
 {{/each}}{{/if}}
 </div>
