@@ -1,13 +1,18 @@
 {{!-- If logged in, display update comment form --}}
 {{#if logged_in}}
-<div class="col-md-6 hide update-comment-form">
-  <h3>Update Comment:</h3>
+<div class="col-md-12 hide update-comment-form text-center">
+  <h2>Update Comment:</h2>
+
+     <p>{{description}}</p>
+<hr>
+
   <form class="form update-comment-form">
-    <label for="comment-body">Comment:</label>
+    <label for="comment-body">New Comment:</label>
     <textarea class="form-input" id="comment-body" name="comment-body"></textarea>
 
     <div class="form-group">
-      <button type="submit" class="btn btn-primary updateCommentBtn" data-id="{{id}}">Update Comment</button>
+      <button type="submit" class="btn btn-primary updateCommentBtn my-2" data-id="{{id}}">Update Comment</button>
+        
         
       <button class="btn btn-primary btn-danger deleteCommentBtn" data-id="{{id}}">Delete Comment</button>
    
