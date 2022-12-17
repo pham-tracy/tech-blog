@@ -32,7 +32,7 @@ Visit the deployed application here: https://stark-harbor-74531.herokuapp.com/
 
 ![Tech blog dashboard page](./public/images/Today's%20Tech%20Blog_Dashboard.png)
 
-![Tech blog create post](./public/images/Today's%20Tech%20Blog_Create%20Post.png)
+![Tech blog create post](./public/images/Today's%20Tech%20Blog_Create%20New%20Post.png)
 
 ![Tech blog post page](./public/images/Today's%20Tech%20Blog_View%20Post.png)
 
