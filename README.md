@@ -24,17 +24,29 @@ N/A
 
 Visit the deployed application here: https://stark-harbor-74531.herokuapp.com/
 
-### Screenshots
+## Screenshots
+
+### Homepage
 
 ![Tech blog homepage](./public/images/Today's%20Tech%20Blog_Homepage.png)
 
+### Login
+
 ![Tech blog login page](./public/images/Today's%20Tech%20Blog_Login.png)
+
+### Dashboard
 
 ![Tech blog dashboard page](./public/images/Today's%20Tech%20Blog_Dashboard.png)
 
+### Create New Post
+
 ![Tech blog create post](./public/images/Today's%20Tech%20Blog_Create%20New%20Post.png)
 
+### View Post
+
 ![Tech blog post page](./public/images/Today's%20Tech%20Blog_View%20Post.png)
+
+### Update Comment
 
 ![Tech blog update comment](./public/images/Today's%20Tech%20Blog_Update%20Comment.png)
 
