@@ -79,6 +79,6 @@ a:hover {
     color:rgb(24, 167, 233)
 }
 
-#post-title, textarea {
+#email-login, #password-login, #name-signup, #email-signup, #password-signup, #post-title, textarea {
     width:100%;
 }
