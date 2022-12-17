@@ -65,3 +65,16 @@ ul {
 }
 
  
+footer {
+    font-size: 10px;
+    text-align: center;
+    color: rgb(96, 96, 96);
+}
+
+a {
+    color: #373794;
+}
+
+a:hover {
+    color:rgb(24, 167, 233)
+}

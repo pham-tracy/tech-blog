@@ -1,13 +1,13 @@
 {{#each posts as |post|}}
 <div class=" px-4 px-lg-5 ">
   <div class="row gx-4 gx-lg-5 justify-content-center">
-    <div class="container col-md-12 col-lg-12 col-xl-12">
+    <div class="container col-md-12 col-lg-12 col-xl-12 text-center">
       <h2 class="post-title">
         <a href="/post/{{post.id}}">{{post.title}}</a>
       </h2>
 
-      <p class="post-meta">{{post.user.name}} on {{format_date post.date_created}}</p> 
-        <div class="col-md-10 col-lg-8 col-xl-7">
+      <p class="post-meta">Created by {{post.user.name}} on {{format_date post.date_created}}</p> 
+        <div class="col-md-12 col-lg-12 col-xl-12 text-center">
           <p>{{post.contents}}</p>
         </div>
     </div>
