@@ -20,9 +20,9 @@
     </div>
   </form>
 
-{{!-- If not logged in, then prompts user to login --}}
+{{!-- If not logged in, then prompts user to login by directing them to the login page before they can update their comment --}}
 {{else}}
-  <a href="/login"><h1>Please login</h1></a>
+  <meta http-equiv="Refresh" content="0; url='/login'" />
 {{/if}}
 </div>
 

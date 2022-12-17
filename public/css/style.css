@@ -1,84 +1,77 @@
 * {
-    font-family: 'Poppins', serif;
-    }
+  font-family: "Poppins", serif;
+}
 
 body {
-    font-size: 20px;
-    color: #373794;
-    /* background-color: #afdea5; */
+  font-size: 20px;
+  color: #373794;
+  background-color: #f8fbf8;
 }
-
-.new-post-div {
-    display:none;
-}
-
 h1 {
-    margin: 10px;
-}
-#nav-bar {
-    display:flex;
-    flex-direction: row;
-    width:100%;
- justify-content: space-between;
- align-items: center;
- /* background-color: whitesmoke; */
- border-radius: 5px;
- border-bottom: 5px rgb(19, 84, 214) solid;
- /* position:fixed;
- z-index: 1; */
+  margin: 10px;
 }
 
 header {
-    padding: 0px;
-}
-#nav-links{
-    display:flex;
-    flex-direction: row;
-    width:100%;
-    align-items: center;
-    margin-bottom: 0;
-    /* padding-left: 0px; */
+  padding: 0px;
 }
 
-#nav-links li{
-   margin:5px 40px;
-   padding:0;
-}
 a {
-    text-decoration: none;
+  text-decoration: none;
+  color: #373794;
 }
 
-.container {
-    /* border: 2px solid black; */
-    /* border-radius: 10px; */
-    margin: 20px;
-
-}
-
-
-ul {
-    list-style-type: none;
-}
-
-.commenter-info, .post-meta {
-    color: rgb(96, 96, 96);
-}
-
- 
 footer {
-    font-size: 10px;
-    text-align: center;
-    color: rgb(96, 96, 96);
-}
-
-a {
-    color: #373794;
+  font-size: 12px;
+  text-align: center;
+  color: rgb(96, 96, 96);
 }
 
 a:hover {
-    color:rgb(24, 167, 233)
+  color: rgb(24, 167, 233);
 }
 
-#email-login, #password-login, #name-signup, #email-signup, #password-signup, #post-title, #comment-body, textarea {
-    width:100%;
+ul {
+  list-style-type: none;
+}
+
+.new-post-div {
+  display: none;
+}
+
+.container {
+  margin: 20px;
+}
+
+.commenter-info,
+.post-meta {
+  color: rgb(96, 96, 96);
+}
+
+#nav-bar {
+  border-bottom: 3px rgb(19, 84, 214) solid;
+}
+
+#nav-links {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+  margin-bottom: 0;
+}
+
+#nav-links li {
+  margin: 5px 40px;
+  padding: 0;
+}
+
+/* Input fields */
+#email-login,
+#password-login,
+#name-signup,
+#email-signup,
+#password-signup,
+#post-title,
+#comment-body,
+textarea {
+  width: 100%;
 }
