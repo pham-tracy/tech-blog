@@ -21,12 +21,13 @@
 {{/if}}
 
 <div> 
+    
 {{!-- Displays each comment --}}
 {{#each comments}}
     <section class="comment">
         <div class="text">
         {{!-- comment --}}
-            {{description}}
+            <p class="comment-description">{{description}}</p>
             {{!-- Commenter information --}}
             <p class="commenter-info">{{user.name}} on {{format_date date_created}}</p>
 

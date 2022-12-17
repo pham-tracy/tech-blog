@@ -47,6 +47,10 @@ ul {
   color: rgb(96, 96, 96);
 }
 
+.comment-description {
+font-size: 18px;
+}
+
 #nav-bar {
   border-bottom: 3px rgb(19, 84, 214) solid;
 }
