@@ -78,3 +78,7 @@ a {
 a:hover {
     color:rgb(24, 167, 233)
 }
+
+#post-title, textarea {
+    width:100%;
+}
