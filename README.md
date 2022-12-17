@@ -4,7 +4,7 @@
 
 This web application serves as a blog for web developers to share their latest thoughts about technology in today's world.
 
-In this application, users are able to create blog posts, as well as comment on others. Users are also able to delete their own posts and comments, if desired. With this functionality, it allows web developers across the world to connect and form a community around the state of technology in today's world.
+In this application, users are able to create blog posts, as well as comment on others. Users are also able to delete their own posts and comments, if desired. With this functionality, it allows web developers across the world to connect and form a community around the state of technology in it's current state.
 
 This application was created with Node.js, Express JS, JavaScript, HTML, Handlebars, Bootstrap and CSS.
 
