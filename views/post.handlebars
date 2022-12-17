@@ -1,19 +1,21 @@
 <div class="text-center">
   <h2>{{title}}</h2>
   <p>{{contents}}</p>
-  <p>Created by {{user.name}} on {{format_date date_created}}</p>
+  <p class="commenter-info">Created by {{user.name}} on {{format_date date_created}}</p>
 </div>
 
 {{!-- If logged in, display form to create a comment --}}
 {{#if logged_in}}
-
+<hr>
 <form id="comment-form">
     <div class="input-field">
         <label>Comment:</label>
+        
         <textarea type="text" id="comment"></textarea>
     </div>
         <input type="hidden" name="post-id" value="{{post.id}}">
-        <button type="submit" class="btn btn-primary create-btn">Post comment</button>
+        <button type="submit" class="btn btn-primary create-btn my-2">Post comment</button>
+<hr>
 </form>
 
 {{/if}}
